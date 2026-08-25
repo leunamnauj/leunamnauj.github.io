@@ -43,35 +43,6 @@ body {
     line-height: 1.6;
 }
 
-/* Metrics */
-
-.metric-list {
-    margin: 16px 0 0;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 8px;
-}
-
-.metric-list li {
-    color: #a0a0a0;
-    font-size: 14px;
-    line-height: 1.4;
-    padding-left: 12px;
-    border-left: 2px solid #1e87f0;
-}
-
-.metric-list strong {
-    color: #1e87f0;
-}
-
-.location {
-    margin-top: 16px;
-    color: #707070;
-    font-size: 13px;
-}
-
 hr {
     border: 0;
     border-top: 1px solid #333333;
@@ -92,10 +63,17 @@ hr {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     column-gap: 24px;
     row-gap: 8px;
     padding-block: 16px;
+}
+
+.site-name {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .site-nav-links {
@@ -121,8 +99,8 @@ hr {
 /* Hero */
 
 .responsive-title {
-    margin: 40px 0 0;
-    padding: 20px 20px 0;
+    margin: 40px 0;
+    padding: 20px;
     color: #ffffff;
     font-size: 24px;
     line-height: 1.2;
@@ -131,44 +109,25 @@ hr {
     hyphens: auto;
 }
 
-.hero-name {
-    margin: 12px 0 20px;
-    padding-left: 20px;
-    color: #e0e0e0;
-    font-size: 20px;
-    font-weight: bold;
-}
-
 @media screen and (min-width: 640px) {
     .responsive-title {
         font-size: 32px;
-    }
-    .hero-name {
-        font-size: 24px;
     }
 }
 
 @media screen and (min-width: 960px) {
     .responsive-title {
-        margin: 60px 0 0;
-        padding: 30px 30px 0;
+        margin: 60px 0;
+        padding: 30px;
         font-size: 48px;
-    }
-    .hero-name {
-        font-size: 32px;
-        padding-left: 30px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .responsive-title {
-        margin: 80px 0 0;
-        padding: 40px 40px 0;
+        margin: 80px 0;
+        padding: 40px;
         font-size: 64px;
-    }
-    .hero-name {
-        font-size: 40px;
-        padding-left: 40px;
     }
 }
 
