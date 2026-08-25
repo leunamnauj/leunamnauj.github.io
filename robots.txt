@@ -1,1 +1,41 @@
-user-agent: *Allow: /Sitemap: https://leunamnauj.github.io/sitemap.xml
+# robots.txt — leunamnauj.github.io
+# https://www.rfc-editor.org/rfc/rfc9309
+
+User-agent: *
+Allow: /
+Sitemap: https://leunamnauj.github.io/sitemap.xml
+
+# --- AI Crawlers ---
+
+User-agent: GPTBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: OAI-SearchBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Claude-Web
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: anthropic-ai
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Google-Extended
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Applebot-Extended
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
